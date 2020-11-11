@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/registration_image_color"
+        app:civ_shadow_radius="10">
+    </com.mikhaellopez.circularimageview.CircularImageView>
+
+    <RelativeLayout
+        android:id="@+id/rl_logview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/email_drawable"
+                android:drawableLeft="@drawable/email_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/app_textfont"
+                android:gravity="center_horizontal"
+                android:hint="User name"
+                android:imeActionLabel="Done"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_view"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/key_drawable"
+                android:drawableLeft="@drawable/key_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/app_textfont"
+                android:gravity="center_horizontal"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:imeActionLabel="Done"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_view"
+            android:fontFamily="@font/app_textfont"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:text="Forgot Password!"
+            android:textStyle="bold">
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forget_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            fancy:fb_defaultColor="#0096FF"
+            fancy:fb_focusColor="#77b8e5"
+            fancy:fb_iconPosition="left"
+            fancy:fb_iconResource="@drawable/lock_drawable"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Secure Login"
+            fancy:fb_textColor="#FFFFFF"
+            fancy:fb_textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signup_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/app_textfont"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Don't have an account? Signup Now!"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <RelativeLayout
+            android:id="@+id/or_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_click">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/or_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:text="OR">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/or_txt"
+                android:background="#7687A2"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/or_txt"
+                android:background="#7687A2"></View>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/social_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or_view"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/app_textfont"
+            android:gravity="center"
+            android:text="Sign in with Social Network"
+            android:textColor="@color/login_txt_color">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/social_txt"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/fb_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                fancy:fb_defaultColor="#48629B"
+                fancy:fb_focusColor="#6a86c5"
+                fancy:fb_fontIconSize="30dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_iconResource="@drawable/faceboo_drawable"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="Facebook"
+                fancy:fb_textColor="#FFFFFF"
+                fancy:fb_textSize="12sp">
+
+            </mehdi.sakout.fancybuttons.FancyButton>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="50dp"></View>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/google_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                fancy:fb_defaultColor="#DC4B38"
+                fancy:fb_focusColor="#e57466"
+                fancy:fb_fontIconSize="30dp"
+                fancy:fb_iconPosition="left"
+                fancy:fb_iconResource="@drawable/google_drawable"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="Google"
+                fancy:fb_textColor="#FFFFFF"
+                fancy:fb_textSize="12sp">
+
+            </mehdi.sakout.fancybuttons.FancyButton>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loadinview"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/login_txt_color"
+        app:SpinKit_Style="Pulse" />
+</RelativeLayout>

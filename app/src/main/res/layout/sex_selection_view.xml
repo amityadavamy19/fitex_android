@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sex_info_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/app_textfont"
+        android:gravity="center"
+        android:text="Select your sex"
+        android:textColor="#E1CCDB"
+        android:textSize="20sp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/sex_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sex_info_txt"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/female_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_female">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="150dp"
+            android:background="#74628E"></View>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+
+            android:layout_height="150dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/male_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_male">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sex_info"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:imeActionLabel="Done"
+        android:backgroundTint="#EAE2F8"
+        android:fontFamily="@font/app_textfont"
+        app:hintTextAppearance="@style/sexHintStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/user_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/app_textfont"
+            android:gravity="center_horizontal"
+            android:hint="Your Username"
+            android:textColor="#EAE2F8"
+            android:imeActionLabel="Done"
+            android:singleLine="true"
+            android:textColorHint="#EAE2F8"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+
+        android:id="@+id/username_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/username_view"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_defaultColor="#0096FF"
+        fancy:fb_focusColor="#77b8e5"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Enter your Username"
+        fancy:fb_textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_button"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/app_textfont"
+        android:gravity="center_horizontal"
+        android:text="Letter, number, underscores, full stop only"
+        android:textColor="#7E859E"></androidx.appcompat.widget.AppCompatTextView>
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loadinview1"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/login_txt_color"
+        app:SpinKit_Style="Pulse" />
+</RelativeLayout>

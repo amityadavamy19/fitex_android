@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/containor_viw"
+    android:layout_margin="3dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="70dp">
+
+        <TextView
+            android:id="@+id/work_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="marquee"
+            android:text="SQUATS"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/work_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/work_name"
+            android:text="X20"
+            android:textColor="@color/registration_image_color"></TextView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/work_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"></ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/section_show_all_button"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/app_textfont"
+        android:textColor="@color/registration_image_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/section_show_all_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_corner_user_lay"
+        android:fontFamily="@font/app_textfont"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="8dp"
+        android:text="View All"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectioned_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_label"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@android:color/transparent" />
+</RelativeLayout>

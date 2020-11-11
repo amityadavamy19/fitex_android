@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/user_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/app_textfont"
+
+                android:text="User"
+                android:textColor="#ffffff"></TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friends_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_click">
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_friends"
+                android:tint="@color/registration_image_color"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/app_textfont"
+                android:text="Friends"
+                android:textColor="#ffffff"></TextView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/userview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_corner_user_lay">
+
+                        <TextView
+                            android:id="@+id/PfofileBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:fontFamily="@font/app_textfont"
+                            android:text=""
+                            android:textColor="@color/registration_image_color"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/app_textfont"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/registration_image_color"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/useremai_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/app_textfont"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/registration_image_color"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_report" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/app_textfont"
+                                android:text="Level"
+                                android:textColor="@color/hint_Color"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/leavel_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/app_textfont"
+
+                                android:text="0"
+                                android:textColor="@color/registration_image_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_dollar" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Coins"
+                                android:textColor="@color/hint_Color"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/total_coins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="0"
+                                android:textColor="@color/registration_image_color"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/userview"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/stepinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded_backdashboard">
+
+                    <TextView
+                        android:id="@+id/stepvaluetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="50dp"
+                        android:fontFamily="@font/app_textfont"
+                        android:padding="5dp"
+                        android:text="Total step taken 0"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"></TextView>
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_info"></ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/coininfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stepinfo"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded_backdashboard"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:id="@+id/tv_textcount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="50dp"
+                        android:fontFamily="@font/app_textfont"
+                        android:padding="5dp"
+                        android:text="Coins through referral"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"></TextView>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_info"></ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/love_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/coininfo"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/rounded_backdashboard"
+                    android:textStyle="bold">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="50dp"
+                        android:fontFamily="@font/app_textfont"
+                        android:padding="5dp"
+                        android:text="Bonus for rating 5 star"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"></TextView>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_arrow_white"></ImageView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/love_app">
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/loadinview"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/login_txt_color"
+                app:SpinKit_Style="Pulse" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

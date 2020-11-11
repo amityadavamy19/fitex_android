@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:orientation="vertical">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/input_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/registration_image_color"
+        app:civ_shadow_radius="10">
+    </com.mikhaellopez.circularimageview.CircularImageView>
+
+    <RelativeLayout
+        android:id="@+id/input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/email_drawable2"
+                android:drawableLeft="@drawable/email_drawable2"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/app_textfont"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_view"
+
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/user_drawable"
+                android:drawableLeft="@drawable/user_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/app_textfont"
+                android:hint="Name"
+                android:imeActionLabel="Done"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_view"
+            android:layout_marginTop="20dp"
+
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mobile_drawable"
+                android:drawableLeft="@drawable/mobile_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/app_textfont"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_view"
+
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/password_drawable"
+                android:drawableLeft="@drawable/password_drawable"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/app_textfont"
+                android:hint="Password"
+                android:imeActionLabel="Done"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/refral_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_view"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/hint_Color"
+            android:fontFamily="@font/app_textfont"
+            app:hintTextAppearance="@style/MyHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_refral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:capitalize="sentences"
+                android:textAllCaps="true"
+                android:fontFamily="@font/app_textfont"
+                android:hint="Please enter referal code"
+                android:imeActionLabel="Done"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/clickotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refral_view"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/mobile_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_smartphone_white">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_mutliecolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/mobile_image"
+                android:fontFamily="@font/app_textfont"
+                android:text="Get verification code on your Mobile Number"
+                android:textSize="13sp"></androidx.appcompat.widget.AppCompatTextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loadinview"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/login_txt_color"
+        app:SpinKit_Style="Pulse" />
+</RelativeLayout>

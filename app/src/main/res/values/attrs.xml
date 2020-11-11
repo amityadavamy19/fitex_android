@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <declare-styleable name="InkPageIndicator">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotGap" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="pageIndicatorColor" format="color" />
+        <attr name="currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxLayout_Layout">
+        <attr name="layout_parallaxFactor" format="float" />
+    </declare-styleable>
+    <declare-styleable name="TintableImageView">
+        <attr name="tint" format="reference|color"/>
+    </declare-styleable>
+    <!--Holo progrees bar-->
+    <declare-styleable name="HoloCircularProgressBar">
+        <attr name="stroke_width" format="dimension" />
+        <attr name="progress" format="float" />
+        <attr name="marker_progress" format="float" />
+        <attr name="progress_color" format="color" />
+        <attr name="progress_background_color" format="color" />
+        <attr name="thumb_visible" format="boolean" />
+        <attr name="marker_visible" format="boolean" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <attr name="circularProgressBarStyle" format="reference" />
+    <declare-styleable name="BaseRatingBar">
+        <attr name="srb_numStars" format="integer" />
+        <attr name="srb_minimumStars" format="float" />
+        <attr name="srb_rating" format="float" />
+        <attr name="srb_starPadding" format="dimension" />
+        <attr name="srb_drawableEmpty" format="reference" />
+        <attr name="srb_drawableFilled" format="reference" />
+        <attr name="srb_isIndicator" format="boolean" />
+        <attr name="srb_scrollable" format="boolean" />
+        <attr name="srb_clickable" format="boolean" />
+        <attr name="srb_clearRatingEnabled" format="boolean" />
+        <attr name="srb_starWidth" format="dimension" />
+        <attr name="srb_starHeight" format="dimension" />
+        <attr name="srb_stepSize" format="float" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/verification_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="100dp"
+        android:fontFamily="@font/app_textfont"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Mobile Verification."
+        android:textColor="@color/opt_view_text_color">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/mobile_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_mobile_slide"></ImageView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/otp_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_slide"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/app_textfont"
+            android:gravity="center"
+            android:text="We have send the Otp on 9821250505 will apply auto to the field"
+            android:textColor="@color/otp_view_text_color2">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otp_info"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:itemBackground="#00000000"
+            android:textColor="@android:color/white"
+            app:itemCount="5"
+            app:lineColor="#6E7A9E"
+            app:viewType="line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otp_view_sms"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp">
+
+            <ImageView
+                android:id="@+id/mobile_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_smartphone_white">
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_info_multi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/mobile_image"
+                android:fontFamily="@font/app_textfont"
+                android:text="Enter your 5 Digit Verification Code"
+                android:textSize="12sp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

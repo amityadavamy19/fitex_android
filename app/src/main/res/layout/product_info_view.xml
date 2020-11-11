@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back">
+
+
+    <RelativeLayout
+        android:id="@+id/toplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/offer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:text="Weekend Offer"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/close_view"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_close">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@+id/rl_powered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/view_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="@color/registration_image_color"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/imageSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="false"
+                            app:sliderCircularHandlerEnabled="true"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="5dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="1dp"
+                            app:sliderIndicatorSelectedColor="#FFF"
+                            app:sliderIndicatorUnselectedColor="#5A5A5A"
+                            app:sliderScrollTimeInSec="1"
+                            app:sliderStartAutoCycle="true" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp">
+
+                            <ImageView
+                                android:id="@+id/prevous_view"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/ic_previous">
+
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/nextView"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_next">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_lay"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/registration_image_color">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/desc_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:textColor="@color/white">
+
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/ins_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_text"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/instruction_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rounded_button_view">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/app_textfont"
+                            android:gravity="center"
+                            android:text="Instruction to purchase"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"></TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/terms_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@+id/instruction_click"
+                        android:background="@drawable/rounded_button_view">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/app_textfont"
+                            android:gravity="center"
+                            android:text="Terms and condition"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"></TextView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ins2_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ins_view"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/claim_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rounded_button_view">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/app_textfont"
+                            android:gravity="center"
+                            android:text="Claim Offer"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"></TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/visit_click"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_toRightOf="@+id/claim_click"
+                        android:background="@drawable/rounded_button_view">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/app_textfont"
+                            android:gravity="center"
+                            android:text="View on website"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"></TextView>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rating_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ins2_view"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/rating_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/app_textfont"
+                    android:text="Rate this offer"
+                    android:textColor="@color/registration_image_color"
+                    android:textSize="14sp"></TextView>
+
+                <com.ssg.tracker.ratingbar.SmileRatingBar
+                    android:id="@+id/ratinfview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rating_txt"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    app:srb_numStars="5"
+                    app:srb_rating="0"
+                    app:srb_starHeight="20dp"
+                    app:srb_starPadding="2dp"
+                    app:srb_starWidth="20dp">
+
+                </com.ssg.tracker.ratingbar.SmileRatingBar>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_powered"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/lineview_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"></View>
+
+
+        <TextView
+            android:id="@+id/pwdTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineview_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/app_textfont"
+            android:text="This Offer is powered by"
+            android:textColor="@color/white"
+            android:textSize="14sp"></TextView>
+
+        <ImageView
+            android:id="@+id/pwdImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pwdTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/ic_launcher_round">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/click_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/app_textfont"
+            android:padding="5dp"
+            android:text="Visit site"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <View
+            android:id="@+id/lineview_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/pwdImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"></View>
+    </RelativeLayout>
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loadinview"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/login_txt_color"
+        app:SpinKit_Style="Pulse" />
+</RelativeLayout>

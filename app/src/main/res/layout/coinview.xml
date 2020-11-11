@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/user_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/app_textfont"
+
+                android:text="User"
+                android:textColor="#ffffff"></TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friends_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_click">
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_friends"
+                android:tint="@color/registration_image_color"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/app_textfont"
+                android:text="Friends"
+                android:textColor="#ffffff"></TextView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/step_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/step_progress"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                app:cpb_background_progressbar_color="#F7FEFF"
+                app:cpb_background_progressbar_width="7dp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="#31D8E2"
+                app:cpb_progressbar_width="7dp">
+
+            </com.mikhaellopez.circularprogressbar.CircularProgressBar>
+
+            <RelativeLayout
+                android:id="@+id/rl_coinimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_dollar">
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <TextView
+                    android:id="@+id/total_steps"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/app_textfont"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_above="@+id/view_line"
+                    android:textColor="@color/registration_image_color"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"></TextView>
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:layout_above="@+id/rl_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white"></View>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:id="@+id/rl_text"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="3dp"
+                            android:fontFamily="@font/app_textfont"
+                            android:text="Total coin balance"
+                            android:textColor="#F7FEFF"
+                            android:textSize="12sp"
+                            android:textStyle="bold"></TextView>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/step_lay"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/transaction"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_backdashboard">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/app_textfont"
+                    android:text="Transaction"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/spencoin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/transaction"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_backdashboard"
+                android:textStyle="bold">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/app_textfont"
+                    android:text="Spend Coin"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"></TextView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loadinview"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/login_txt_color"
+            app:SpinKit_Style="Pulse" />
+    </RelativeLayout>
+</LinearLayout>

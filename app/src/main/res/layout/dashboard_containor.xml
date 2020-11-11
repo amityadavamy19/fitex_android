@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back">
+<RelativeLayout
+    android:id="@+id/rl_nointernet"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/tv_no_internet"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/registration_image_color"
+        app:civ_shadow_radius="10">
+    </com.mikhaellopez.circularimageview.CircularImageView>
+    <TextView
+        android:id="@+id/tv_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="!Oops there is no internet connection.."
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        ></TextView>
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_below="@+id/tv_no_internet"
+        android:id="@+id/retry_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        fancy:fb_defaultColor="#ffffff"
+        fancy:fb_focusColor="#ffffff"
+        fancy:fb_fontIconSize="30dp"
+        fancy:fb_iconPosition="left"
+        android:layout_centerHorizontal="true"
+        fancy:fb_iconResource="@drawable/ic_replay_black_24dp"
+        fancy:fb_radius="10dp"
+        fancy:fb_text="Retry"
+        fancy:fb_textColor="#03A9F4"
+        fancy:fb_textSize="16sp">
+    </mehdi.sakout.fancybuttons.FancyButton>
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loadinview"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/login_txt_color"
+        app:SpinKit_Style="Pulse" />
+</RelativeLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView_ads"
+        android:layout_below="@+id/toolbar_new" />
+
+    <RelativeLayout
+        android:id="@+id/adView_ads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tabs"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000">
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingStart="10dp"
+        app:tabPaddingEnd="10dp"
+        app:tabSelectedTextColor="@color/registration_image_color"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/white" />
+</RelativeLayout>

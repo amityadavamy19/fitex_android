@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/work_out"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/title_gif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5sp"
+            android:fontFamily="@font/app_textfont"
+            android:text="Hello ser"
+            android:textColor="@color/registration_image_color"
+            android:textSize="14sp"></TextView>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

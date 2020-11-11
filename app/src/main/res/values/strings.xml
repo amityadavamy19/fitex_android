@@ -1,0 +1,29 @@
+<resources>
+<!--    <string name="facebook_app_id">1268745453329667</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb1268745453329667</string>-->
+    <string name="facebook_app_id">1009004122911858</string>
+    <string name="fb_login_protocol_scheme">fb1009004122911858</string>
+    <string name="app_name">Fitex</string>
+    <string name="mi_content_description_skip">Skip</string>
+    <string name="mi_content_description_back">Back</string>
+    <string name="mi_content_description_next">Next</string>
+    <string name="mi_content_description_next_finish">Next/Finish</string>
+    <string name="back4app_app_id">r1LfFVK8l8EJtW0eGDEXTNtiCy0tdujDk47cGx9L</string>
+    <string name="back4app_client_key">kSLW7541lufZTmhXIYGOqrnXI60o02FUlXVWWPYJ</string>
+    <string name="google_client_id">765824647620-sdjvls7uv7390lrp3kclfnr7ts500s42.apps.googleusercontent.com</string>
+    <string name="google_fit_client">765824647620-l3fb1650tbrpg6iqdmrlk7klidn2mc89.apps.googleusercontent.com</string>
+    <string name="signing_certificate">DD:70:A8:F2:CE:47:94:00:32:32:98:81:AD:E0:0B:03:17:0B:C4:77</string>
+    <string name="goolge_client_secrate">k4zZXMDbI55fK8XKr38oLGs1</string>
+<!--    <string name="app_id" translatable="false">ca-app-pub-1647161317080920~8078815082</string>-->
+<!--    <string name="ad_id_banner" translatable="false">ca-app-pub-1647161317080920/7758661869</string>-->
+<!--    <string name="ads_id_rewarded" translatable="false">ca-app-pub-1647161317080920/5160418680</string>-->
+    <string name="app_id" translatable="false">ca-app-pub-6196293190942668~8157778777</string>
+    <string name="ad_id_banner" translatable="false">ca-app-pub-6196293190942668/8943095459</string>
+    <string name="ads_id_rewarded" translatable="false">ca-app-pub-6196293190942668/2569258792</string>
+    <string name="cancle">Cancle</string>
+    <plurals name="mi_label_grant_permission">
+        <item quantity="one">Grant permission</item>
+        <item quantity="other">Grant permissions</item>
+    </plurals>
+    <string name="mi_label_button_cta">Get started</string>
+</resources>

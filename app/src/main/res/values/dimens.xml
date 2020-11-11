@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_size">30dp</dimen>
+    <dimen name="icon_size2">20dp</dimen>
+    <dimen name="mi_baseline">16dp</dimen>
+    <dimen name="mi_baseline_half">8dp</dimen>
+    <dimen name="mi_margin_bottom_pager_indicator">39dp</dimen>
+    <dimen name="mi_y_offset">144dp</dimen>
+    <dimen name="mi_button_cta_height">48dp</dimen>
+    <dimen name="selected_text_size">35dp</dimen>
+    <dimen name="text_size">30dp</dimen>
+</resources>

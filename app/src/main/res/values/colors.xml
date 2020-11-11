@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="edittext_color">#414A75</color>
+    <color name="hint_Color">#7687A2</color>
+    <color name="login_txt_color">#E1E7EF</color>
+    <color name="text_bodyinfo">#0F8FEE</color>
+    <color name="sex_hint_color">#EAE2F8</color>
+    <color name="registration_image_color">#20D0D3</color>
+    <color name="opt_view_text_color">#31C3CE</color>
+    <color name="otp_view_text_color2">#D5D4DD</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="mi_status_bar_background">#ff000000</color>
+    <color name="mi_ripple_color">#17000000</color>
+
+    <color name="mi_text_color_primary_light">#de000000</color>
+    <color name="mi_text_color_secondary_light">#8a000000</color>
+    <color name="mi_text_color_primary_dark">#ffffffff</color>
+    <color name="mi_text_color_secondary_dark">#b3ffffff</color>
+
+    <color name="mi_icon_color_dark">#ffffffff</color>
+    <color name="mi_icon_color_light">#8a000000</color>
+</resources>

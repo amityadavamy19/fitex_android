@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:cardBackgroundColor="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/user_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_user"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_1"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/app_textfont"
+
+                android:text="User"
+                android:textColor="#ffffff"></TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friends_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_click">
+
+            <ImageView
+                android:id="@+id/img_2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_friends"
+                android:tint="@color/registration_image_color"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_2"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/app_textfont"
+                android:text="Friends"
+                android:textColor="#ffffff"></TextView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bazar_new_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
